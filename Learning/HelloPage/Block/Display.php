@@ -2,10 +2,11 @@
 namespace Learning\HelloPage\Block;
 use Magento\Framework\View\Element\Template;
 
-class Main extends Template
+class Display extends Template
 {    
-    protected function _prepareLayout()
+    public function getHelloWorldTxt()
     {
-        $this->setMessage('Hello Again World');
+        return "<a href='text'>click</a>";
     }
+ 
 }
